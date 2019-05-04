@@ -91,8 +91,10 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# my own config
 alias ytl='mkdir build && cd build && cmake .. && make && cd ..'
 alias btl='cd build && cmake .. && make && cd ..'
+#alias clion='sh where_is_your_clion/bin/clion.sh"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -117,6 +119,10 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+# cuda path
 export PATH=/usr/local/cuda-9.0/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-9.0/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+# ros environmental variable
 source /opt/ros/kinetic/setup.bash
+# fix bug: `source devel/setup.sh` not work
+export ROS_PACKAGE_PATH=${ROS_PACKAGE_PATH}:/home/songjiaxin/catkin_ws/src
