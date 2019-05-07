@@ -94,12 +94,12 @@ alias l='ls -CF'
 # my own config
 alias ytl='mkdir build && cd build && cmake .. && make && cd ..'
 alias btl='cd build && cmake .. && make && cd ..'
-#alias clion='sh where_is_your_clion/bin/clion.sh"
-
+alias clion='sh ~/binary/clion-2019.1.2/bin/clion.sh'
+alias ssh_server='ssh songjiaxin@192.168.2.179'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
+alias gitlogmine='git log --graph --oneline --decorate --all'
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
